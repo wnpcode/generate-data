@@ -4,12 +4,6 @@ import "./App.css";
 function App() {
   const [name, setName] = useState("");
   const [cat, setCat] = useState("");
-  const listCat = [
-    {
-      label: "",
-      value: "",
-    },
-  ];
   const localdata = localStorage.getItem("listData")
     ? JSON.parse(localStorage.getItem("listData") as string)
     : [];
